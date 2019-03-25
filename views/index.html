@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body::before{
+        content: '';
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('wallpaper.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-position : 100% 100%;
+        background-size: cover;
+        filter: blur(1px);
+        z-index: -9;}
+        form {
+            top:50%;
+            padding-left: 30px;
+            position: fixed;
+            width: 100%;
+        }
+
+        #done {
+        width: 100px;
+        position: absolute;
+        height: 40px;
+        background-color: #008CBA;
+        color: white;
+
+        }
+        #search{
+            width: 80%;
+            height: 35px;
+            padding-left: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form action="/search" method="post" id="form">    
+    <input type="text" name="Search" id="search" placeholder="Enter a movie name">
+    <input type="submit" value="Search" id="done">
+</form>
+</body>
+</html>
+
+
+
